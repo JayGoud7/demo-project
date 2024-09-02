@@ -57,8 +57,8 @@ const ProductListing = ({ products }) => {
 
   return (
     <>
-      <nav className=" lg:flex justify-around p-5 items-center">
-        <div className="text-2xl cursor-pointer">
+      <nav className=" lg:flex justify-around p-3 items-center">
+        <div className="text-2xl mb-1 cursor-pointer">
           <h2 onClick={() => setProduct(products)}>AJ-Stores</h2>
         </div>
 
@@ -88,7 +88,7 @@ const ProductListing = ({ products }) => {
           <select
             name="sort"
             id="sort"
-            className="border border-black rounded-lg text-sm"
+            className="border border-black rounded-lg text-sm mt-2"
             onChange={(e) => sortCategory(e.target.value)}
           >
             <option value="default">Default</option>
