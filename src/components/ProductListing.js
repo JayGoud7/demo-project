@@ -57,7 +57,7 @@ const ProductListing = ({ products }) => {
 
   return (
     <>
-      <nav className=" sm:flex justify-around pt-5 items-center">
+      <nav className=" lg:flex justify-around p-5 items-center">
         <div className="text-2xl cursor-pointer">
           <h2 onClick={() => setProduct(products)}>AJ-Stores</h2>
         </div>
