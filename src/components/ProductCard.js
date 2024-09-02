@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Main = ({ product }) => {
   return (
-    <div className="lg:grid grid-cols-3 mx-auto max-w-screen-lg gap-4 p-4  w-screen h-screen">
+    <div className=" grid grid-cols-1 sm:grid-cols-3 gap-7 p-6 w-full h-full justify-center items-center ">
       {product.map((products) => (
         <Link
           key={products.id}
-          className=" w-72 max-w-xs h-96 flex items-center flex-col justify-between rounded-xl cursor-pointer shadow-custom-default hover:shadow-custom-hover transition-shadow"
+          className=" w-75 max-w-xs h-96 flex items-center flex-col justify-between rounded-xl cursor-pointer shadow-custom-default hover:shadow-custom-hover transition-shadow"
           to={`/product/${products.id}`}
         >
           <div className="w-full h-60 p-2 overflow-hidden ">
