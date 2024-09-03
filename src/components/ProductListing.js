@@ -79,13 +79,13 @@ const ProductListing = ({ products }) => {
           >
             <input
               type="text"
-              className="lg:border border-black w-64 h-8 p-2 rounded-lg sm: border border-black xs:w-24 xs:h-4"
+              className="lg:border border-black w-64 h-8 p-2 rounded-lg sm: border border-black xs:w-32 xs:h-4"
               value={inputs}
               onChange={handleinput}
               placeholder="search..."
             />
             <button
-              className="lg: p-1 text-2xl rounded-lg text-black xs:text-sm "
+              className="lg: p-1 text-2xl rounded-lg text-black xs:text-sm xs:rounded-none "
               type="submit"
             >
               <IoSearchSharp />
