@@ -66,7 +66,7 @@ const ProductListing = ({ products }) => {
 
   return (
     <>
-      <nav className="flex justify-around p-3 items-center xs:flex xs:justify-evenly xs:items-center  xs:mt-2 ">
+      <nav className="flex justify-around p-3 items-center xs:flex xs:justify-between xs:px-4 xs:items-center  xs:mt-2">
         <div className="text-2xl mb-1 cursor-pointer ">
           <h2 className="xs:text-sm xs:font-semibold" onClick={() => setProduct(products)}>AJ-Stores</h2>
         </div>
@@ -79,13 +79,13 @@ const ProductListing = ({ products }) => {
           >
             <input
               type="text"
-              className="lg:border border-black w-64 h-8 p-2 rounded-lg sm: border border-black xs:w-32 xs:h-4"
+              className="lg:border border-black w-64 h-8 p-2 rounded-lg sm: border border-black xs:w-32 xs:h-5"
               value={inputs}
               onChange={handleinput}
               placeholder="search..."
             />
             <button
-              className="lg: p-1 text-2xl rounded-lg text-black xs:text-sm xs:rounded-none "
+              className=" p-1 text-2xl rounded-lg text-black xs:text-sm xs:rounded-none xs:text-base"
               type="submit"
             >
               <IoSearchSharp />
@@ -97,7 +97,7 @@ const ProductListing = ({ products }) => {
           <select
             name="sort"
             id="sort"
-            className="border border-black rounded-lg text-sm mt-2 xs:w-14 xs:h-4 xs:text-xs xs:mb-2"
+            className="border border-black rounded-lg text-sm mt-2 xs:w-16 xs:h-4 xs:text-xs xs:mb-2"
             onChange={(e) => sortCategory(e.target.value)}
           >
             <option value="default">Default</option>
