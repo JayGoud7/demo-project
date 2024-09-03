@@ -7,7 +7,7 @@ const Main = ({ product }) => {
       {product.length === 0 && (
         <h1 className="text-2xl flex justify-center mt-60">No Product Found</h1>
       )}
-      <div className="flex justify-center p-7 xs:p-4">
+      <div className="flex justify-center p-6 xs:p-3">
         <div className=" grid grid-cols-3 gap-10  xs:grid xs:grid-cols-1 xs:gap-4 ">
           {product.map((products) => (
             <Link
