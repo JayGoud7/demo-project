@@ -34,13 +34,15 @@ const ProductListing = ({ products }) => {
     setProduct(sortedCategory);
   };
 
-  const searchProducts = (searchTerm) => {
-    if (!searchTerm) {
+
+
+  const searchProducts = (search) => {
+    if (!search) {
       setProduct(products);
       return;
     }
 
-    const normalizedSearchTerm = searchTerm.toLowerCase().replace(/\s+/g, "");
+    const normalizedSearchTerm = search.toLowerCase().replace(/\s+/g, "");
     const searchedProducts = products.filter((item) =>
       item.name.toLowerCase().replace(/\s+/g, "").includes(normalizedSearchTerm)
     );
@@ -64,26 +66,26 @@ const ProductListing = ({ products }) => {
 
   return (
     <>
-      <nav className=" lg:flex justify-around p-3 items-center">
-        <div className="text-2xl mb-1 cursor-pointer">
-          <h2 onClick={() => setProduct(products)}>AJ-Stores</h2>
+      <nav className="flex justify-around p-3 items-center xs:flex xs:justify-between xs:items-center xs:py-1 xs:mt-2 ">
+        <div className="text-2xl mb-1 cursor-pointer ">
+          <h2 className="xs:text-sm" onClick={() => setProduct(products)}>AJ-Stores</h2>
         </div>
 
         <div>
           <form
             action="submit"
             onSubmit={handlesubmit}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 xs:gap-0"
           >
             <input
               type="text"
-              className="lg:border border-black w-64 h-8 p-2 rounded-lg sm: border border-black"
+              className="lg:border border-black w-64 h-8 p-2 rounded-lg sm: border border-black xs:w-24 xs:h-4"
               value={inputs}
               onChange={handleinput}
               placeholder="search..."
             />
             <button
-              className="lg: p-1 text-2xl rounded-lg text-black "
+              className="lg: p-1 text-2xl rounded-lg text-black xs:text-sm "
               type="submit"
             >
               <IoSearchSharp />
@@ -95,7 +97,7 @@ const ProductListing = ({ products }) => {
           <select
             name="sort"
             id="sort"
-            className="border border-black rounded-lg text-sm mt-2"
+            className="border border-black rounded-lg text-sm mt-2 xs:w-14 xs:h-4 xs:text-xs xs:mb-2"
             onChange={(e) => sortCategory(e.target.value)}
           >
             <option value="default">Default</option>
