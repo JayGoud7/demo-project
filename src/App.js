@@ -6,7 +6,7 @@ import ProductDetail from "./components/ProductDetails";
 const products = [
   {
     id: 1,
-    name: "Air Jorden",
+    name: "Air jorden",
     price: 799.99,
     category: "Footwear",
     image:

@@ -35,13 +35,20 @@ const ProductListing = ({ products }) => {
   };
 
   const searchProducts = (searchTerm) => {
-    if (searchTerm) {
-      const searchedProducts = products.filter((item) =>
-        item.name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setProduct(searchedProducts);
-    } else {
+    if (!searchTerm) {
       setProduct(products);
+      return;
+    }
+
+    const normalizedSearchTerm = searchTerm.toLowerCase().replace(/\s+/g, "");
+    const searchedProducts = products.filter((item) =>
+      item.name.toLowerCase().replace(/\s+/g, "").includes(normalizedSearchTerm)
+    );
+
+    if (searchedProducts.length === 0) {
+      setProduct([]);
+    } else {
+      setProduct(searchedProducts);
     }
   };
 
