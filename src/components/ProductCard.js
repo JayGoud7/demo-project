@@ -11,7 +11,7 @@ const Main = ({ product }) => {
         {product.map((products) => (
           <Link
             key={products.id}
-            className=" w-75 max-w-xs h-96 flex items-center flex-col justify-between rounded-xl cursor-pointer shadow-custom-default hover:shadow-custom-hover transition-shadow xs:w-full xs:h-full"
+            className=" w-75 max-w-xs h-96 flex items-center flex-col justify-between rounded-xl cursor-pointer shadow-custom-default hover:shadow-custom-hover transition-shadow"
             to={`/product/${products.id}`}
           >
             <div className="w-full h-60 p-2 overflow-hidden">
