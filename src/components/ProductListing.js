@@ -66,9 +66,9 @@ const ProductListing = ({ products }) => {
 
   return (
     <>
-      <nav className="flex justify-around p-3 items-center xs:flex xs:justify-between xs:items-center xs:py-1 xs:mt-2 ">
+      <nav className="flex justify-around p-3 items-center xs:flex xs:justify-evenly xs:items-center  xs:mt-2 ">
         <div className="text-2xl mb-1 cursor-pointer ">
-          <h2 className="xs:text-sm" onClick={() => setProduct(products)}>AJ-Stores</h2>
+          <h2 className="xs:text-sm xs:font-semibold" onClick={() => setProduct(products)}>AJ-Stores</h2>
         </div>
 
         <div>

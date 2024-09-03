@@ -40,7 +40,7 @@ const products = [
     category: "Electronics",
     image:
       "https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with actual
-    description: "it is a rgb keyboard, keys responsive was good.",
+    description: "it is a rgb keyboard and butterfly keys.",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const products = [
     category: "Clothing",
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with actual
-    description: "it is a half hands t-shirt and its color is white.",
+    description: "it is a white half hands t-shirt.",
   },
   {
     id: 6,
